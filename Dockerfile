@@ -36,12 +36,6 @@ RUN pip3 install future
 RUN pip3 install numpy
 
 RUN mkdir /app/sharedfiles
-COPY ./sharedfiles/yolov5m.pt /app/sharedfiles/yolov5m.pt
-COPY ./sharedfiles/face.pt /app/sharedfiles/face.pt
-COPY ./sharedfiles/facerec-high.model /app/sharedfiles/facerec-high.model
-COPY ./sharedfiles/scene.pt /app/sharedfiles/scene.pt
-COPY ./sharedfiles/categories_places365.txt /app/sharedfiles/categories_places365.txt
-COPY ./sharedfiles/bebygan_x4.pth /app/sharedfiles/bebygan_x4.pth
 
 RUN mkdir /app/server
 COPY ./server /app/server
